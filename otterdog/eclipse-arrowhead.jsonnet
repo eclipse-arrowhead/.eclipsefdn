@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-arrowhead') {
+orgs.newOrg('iot.arrowhead', 'eclipse-arrowhead') {
   settings+: {
     web_commit_signoff_required: false,
     workflows+: {
