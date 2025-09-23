@@ -96,6 +96,9 @@ orgs.newOrg('iot.arrowhead', 'eclipse-arrowhead') {
           requires_strict_status_checks: true,
         },
       ],
+      topics: [
+        "arrowhead-v4"
+      ]
     },
     orgs.newRepo('documentation') {
       allow_merge_commit: true,
@@ -128,6 +131,9 @@ orgs.newOrg('iot.arrowhead', 'eclipse-arrowhead') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      topics: [
+        "arrowhead-v5"
+      ]
     },
     orgs.newRepo('roadmap') {
       allow_merge_commit: true,
@@ -185,6 +191,9 @@ orgs.newOrg('iot.arrowhead', 'eclipse-arrowhead') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      topics: [
+        "arrowhead-v5"
+      ]
     },
     orgs.newRepo('ah5-device-qos-evaluator-java-spring') {
       allow_merge_commit: true,
