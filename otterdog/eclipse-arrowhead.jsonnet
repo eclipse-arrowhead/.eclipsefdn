@@ -195,6 +195,15 @@ orgs.newOrg('iot.arrowhead', 'eclipse-arrowhead') {
         "arrowhead-v5"
       ]
     },
+    orgs.newRepo('ah5-device-qos-evaluator-java-spring') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
   ],
 } + {
   # snippet added due to 'https://github.com/EclipseFdn/otterdog-configs/blob/main/blueprints/add-dot-github-repo.yml'
