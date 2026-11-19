@@ -204,7 +204,7 @@ orgs.newOrg('iot.arrowhead', 'eclipse-arrowhead') {
         default_workflow_permissions: "write",
       },
     },
-    orgs.newRepo('rsafg-ai-gym-client') {
+	orgs.newRepo('rsafg-ai-gym-client') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
@@ -212,6 +212,18 @@ orgs.newOrg('iot.arrowhead', 'eclipse-arrowhead') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+    },
+	orgs.newRepo('ah5-sys-monitor-java-spring') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      topics: [
+        "arrowhead-v5"
+      ]
     },
   ],
 } + {
